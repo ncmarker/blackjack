@@ -1,0 +1,338 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #35654d;
+}
+
+/*<-----------NAVBAR----------->*/
+#navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #35654d;
+}
+
+#nav-container {
+  width: 1000px;
+  margin: 0px auto;
+  text-align: right;
+  color: #fff;
+  padding: 12px;
+}
+
+#nav-container a {
+  display: inline-block;
+  padding: 8px 10px;
+  vertical-align: middle;
+  margin: 0px 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+#nav-container a:hover {
+  background-color: #d12d36;
+  border-radius: 13px;
+}
+
+#logo {
+  font-weight: bold;
+  float: left;
+  padding: 8px 15px;
+  margin: 0px;
+  vertical-align: middle;
+}
+
+.clear {
+  clear: both;
+}
+
+/*<-----------HEADER----------->*/
+#container {
+  width: 1000px;
+  margin: 0px auto;
+  padding: 50px 100px 150px;
+}
+
+#header {
+  height: 500px;
+  text-align: center;
+  padding: 200px 100px 100px;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 92px;
+  margin: 35px 0px;
+  text-shadow: 4px 4px 8px rgb(129, 129, 129);
+  -webkit-text-stroke: 1.5px #ccc;
+}
+
+#header p {
+  font-size: 22px;
+  color: #d12d36;
+}
+
+.button {
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #d12d36;
+  display: inline-block;
+  border-radius: 18px;
+  margin-top: 30px;
+  background-color: #d12d36;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #d12d36;
+}
+
+.section {
+  margin-top: 150px;
+}
+/*<-----------RULES CONTENT----------->*/
+#rules-content {
+  background-color: #d12d36;
+  color: #fff;
+  padding: 50px;
+}
+
+.topic-space {
+  margin-top: 50px;
+}
+
+#code {
+  color: #fff;
+}
+/*<-----------CARD COMPONENT----------->*/
+.card {
+  width: 100px;
+  height: 140px;
+  /*border: 1px solid #000;*/
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: middle;
+  visibility: hidden;
+  box-shadow: 3px 3px 5px rgb(59, 59, 59);
+}
+
+#deck {
+  width: 100px;
+  height: 140px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px 100px 10px 0px;
+  vertical-align: middle;
+  background-image: url('https://i.pinimg.com/originals/09/a5/8d/09a58d561b2a7b92bd506c83414ef1ab.png');
+  background-size: contain;
+  box-shadow: 5px 5px 5px rgb(36, 36, 36);
+}
+
+#pec1,
+#pec2,
+#pec3 {
+  visibility: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+/*<-----------CHIP COMPONENT----------->*/
+#chip {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  display: inline-block;
+  margin: 20px;
+  vertical-align: middle;
+  position: relative;
+  background-image: url('https://www.pngitem.com/pimgs/m/518-5181524_red-poker-chip-png-transparent-png.png');
+  background-position: center;
+  background-size: cover;
+  box-shadow: 2px 2px 3px #252525;
+}
+
+#bet-chip {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  display: inline-block;
+  margin: 20px;
+  vertical-align: middle;
+  position: relative;
+  background-image: url('https://www.pngitem.com/pimgs/m/518-5181524_red-poker-chip-png-transparent-png.png');
+  background-position: center;
+  background-size: cover;
+  /*vvisibility: hidden;*/
+}
+
+#chip-amt {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 65px;
+  left: 18px;
+}
+
+#bets {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*<-----------GAME CONTENT----------->*/
+#game {
+  text-align: center;
+  background-color: #35654d;
+  padding: 50px;
+  color: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#bets-placed {
+  padding: 10px 0px 0px;
+  text-align: left;
+}
+
+.hit-pass {
+  margin: 15px 20px 0px;
+  display: block;
+  text-align: center;
+  visibility: hidden;
+  background-color: #d12d36;
+  color: #fff;
+  border: 2px solid #d12d36;
+  font-size: 22px;
+  padding: 10px 20px;
+  border-radius: 18px;
+  text-decoration: none;
+}
+
+.hit-pass:hover {
+  background-color: #8b1d22;
+  color: #fff;
+  border: 2px solid #8b1d22;
+}
+
+#player-turn {
+  display: inline-block;
+  margin: 0px 10px 0px 0px;
+  padding: 0px;
+  vertical-align: middle;
+}
+
+#game em {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#game-start {
+  text-align: center;
+  margin: 0px 0px 0px 50px;
+}
+
+#game-start:hover {
+  background-color: #8b1d22;
+  color: #fff;
+  border: 2px solid #8b1d22;
+}
+/*<-----------CASHIER CONTENT----------->*/
+#cashier {
+  background-color: #252525;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#cashier-chips {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  margin: 20px;
+  position: relative;
+  background-image: url('https://e7.pngegg.com/pngimages/428/473/png-clipart-texas-hold-em-casino-token-poker-gambling-poker-chips.png');
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#caashier-chip-ctn {
+  width: 200px;
+}
+
+#cashier-chip-amt {
+  position: absolute;
+  left: 75px;
+  width: 150px;
+  text-align: left;
+}
+
+#all-cashier-chips {
+  display: inline-block;
+  margin: 0px 150px;
+}
+
+#cashier .button:hover {
+  background-color: #8b1d22;
+  color: #fff;
+  border: 2px solid #8b1d22;
+}
+
+#purchase,
+#refresh {
+  margin: 0px 50px 0px;
+}
+
+#minus-icon,
+#plus-icon {
+  border-radius: 50%;
+  /*background-color: lightgrey;*/
+  border: 1px solid lightgrey;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  display: inline-block;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+#minus-icon:hover,
+#plus-icon:hover {
+  background-color: darkgrey;
+}
+
+#minus-icon {
+  line-height: 23px;
+}
+
+#plus-icon {
+  margin-left: 5px;
+}
+/*<-----------FOOTER----------->*/
+#footer {
+  width: 100%;
+  color: #929292;
+  text-align: center;
+  background-color: #fff;
+  margin: 0px;
+  padding: 25px;
+}
+
+#copywright {
+  font-size: 12px;
+}
